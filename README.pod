@@ -8,8 +8,8 @@ version 0.01a
 
 =head2 SYNOPSIS
 
-This is a an module to make calls and send SMSs using Twilio REST API
-and creates TwiML. 
+This is a module to make phone calls and send SMSs using Twilio REST API. 
+It also creates TwiML for response elements. 
 
 =head2 INSTALLATION
 
@@ -23,11 +23,11 @@ and creates TwiML.
 
 =head2 DEPENDENCIES
 
-All should be available with people.
+All should be available with Perl.
 
 =head2 SUPPORT AND DOCUMENTATION
 
-Visiting http://www.twilio.com/docs
+Visit: http://www.twilio.com/docs
 
 =head2 COPYRIGHT AND LICENCE
 
