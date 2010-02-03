@@ -8,12 +8,26 @@ version 0.01a
 
 =head2 SYNOPSIS
 
+This is a an module to make calls and send SMSs using Twilio REST API
+and creates TwiML. 
 
 =head2 INSTALLATION
 
+1) Download the necessary files via git clone.
+
+2) Include the following in your perl program:
+       use lib '/whatever/directory/file/is/in';
+       use twilio;
+
+3) View the uploaded examples
+
 =head2 DEPENDENCIES
 
+All should be available with people.
+
 =head2 SUPPORT AND DOCUMENTATION
+
+Visiting http://www.twilio.com/docs
 
 =head2 COPYRIGHT AND LICENCE
 
