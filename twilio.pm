@@ -310,7 +310,7 @@ sub Gather
 	shift->AddVerb(V_GATHER, @_);
 }
 
-sub Play 
+sub Play
 {
 	shift->AddVerb(V_PLAY, @_);
 }
