@@ -1,3 +1,14 @@
+#Modified:
+########################
+# Twilio REST interface
+# Modified/Updated 
+#
+# by Naveen Manivannan
+# naveen.manivannan GMAIL
+########################
+
+
+#Original:
 ############################
 # Twilio REST interface
 #  and Response objects
@@ -261,6 +272,8 @@ use constant V_DIAL		=> 'Dial';
 use constant V_REDIRECT	=> 'Redirect';
 use constant V_PAUSE	=> 'Pause';
 use constant V_HANGUP	=> 'Hangup';
+use constant V_CONFERENCE => 'Conference';
+use constant V_SMS => 'SMS';
 
 sub new 
 {
@@ -312,7 +325,7 @@ sub Redirect
 	shift->AddVerb(V_REDIRECT, @_);
 }
 
-sub Record 
+sub Record
 {
 	shift->AddVerb(V_RECORD, undef, @_);
 }
@@ -326,6 +339,17 @@ sub Pause
 {
 	shift->AddVerb(V_PAUSE, undef, @_);
 }
+
+sub Conference
+  {
+    # REMEMBER it must be b/w dial parameter
+    shift->AddVerb(V_CONFERENCE, undef, @_);
+  }
+
+sub SMS
+    {
+      shift->AddVerb(V_SMS, @_);
+    }
 
 sub GetResponse
 {
