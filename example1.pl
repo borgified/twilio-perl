@@ -3,7 +3,6 @@
 use strict;
 use warnings;
 
-#use lib '/home/naveen/workspace/Twilio/';
 use twilio;
 
 my $response = new TwilioResponse();

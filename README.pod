@@ -16,6 +16,7 @@ It also creates TwiML for response elements.
 1) Download the necessary files via git clone.
 
 2) Include the following in your perl program:
+       
        use lib '/whatever/directory/file/is/in';
        use twilio;
 
@@ -31,7 +32,7 @@ Visit: http://www.twilio.com/docs
 
 =head2 COPYRIGHT AND LICENCE
 
-Copyright (C) 2009,2010 Naveen Manivann (Nash Research Group)
+Copyright (C) 2009,2010 Naveen Manivannan (Nash Research Group)
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.

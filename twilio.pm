@@ -31,6 +31,7 @@ package TwilioRestResponse;
 use strict;
 use HTTP::Response;
 use XML::Simple;
+use Data::Dumper;
 
 sub new
 {
@@ -342,14 +343,26 @@ sub Pause
 
 sub Conference
   {
-    # REMEMBER it must be b/w dial parameter
-    shift->AddVerb(V_CONFERENCE, undef, @_);
+    # REMEMBER it must be b/w a dial parameter.
+    shift->AddVerb(V_CONFERENCE, @_);
   }
 
 sub SMS
     {
       shift->AddVerb(V_SMS, @_);
     }
+
+sub CheckSMS {
+
+# Checks to see if the SMS is less than 160.
+# This will prevent splitting an SMS.
+
+  if (length(shift) > 0 and length(shift) <= 160 ) {
+    return 1;
+  } else {
+    return 0;
+  }
+}
 
 sub GetResponse
 {
